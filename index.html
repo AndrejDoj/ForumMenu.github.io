@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('Images/BgWEB.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: repeat;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #Glaven, #Sporeden {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0;
+        }
+
+        h1, h2, h3 {
+            color: white;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.2em;
+        }
+
+        h3 {
+            font-size: 1em;
+        }
+
+        #Sporeden > div {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #Sporeden > div h3 {
+            padding: 10px;
+            border: solid white 1px;
+            margin: 5px;
+            border-radius: 20px;
+            transition: background 0.3s, border 0.3s;
+        }
+
+        #Sporeden div h3:hover {
+            background: saddlebrown;
+            border-color: saddlebrown;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+            justify-content: space-between;
+            background: rgba(139, 69, 19, 0.5);
+            padding: 10px;
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            align-items: center;
+            line-height: 0px;
+            font-size: 10px;
+        }
+
+
+
+        #ZaMene, #ZaForum {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        @media (min-width: 601px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            h1 {
+                font-size: 3em;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            h3 {
+                font-size: 1.5em;
+            }
+        }
+        h3:hover{
+            color: black;
+            transition: background 0.3s, border 0.3s;
+        }
+    </style>
+</head>
+<body>
+<div id="Glaven">
+    <img src="Images/Logo-removebg-preview.png" alt="Logo">
+</div>
+<div id="Sporeden">
+    <h2>Изберете јазик / Choose language </h2>
+    <div>
+        <a href="MakKatalog.html"><h3>Македонски</h3></a>
+        <a href="AngKatalog.html"><h3>English</h3></a>
+    </div>
+</div>
+<footer>
+    <div id="ZaMene">
+        <div id="d">
+            <p>Developer Contact:</p>
+        </div>
+        <p>dojcinoskiandrej@gmail.com</p>
+    </div>
+    <p>© All rights reserved</p>
+    <div id="ZaForum">
+        <div id="p">
+            <p>Forum Contact:</p>
+        </div>
+        <p>079-238-833</p>
+    </div>
+</footer>
+</body>
+</html>

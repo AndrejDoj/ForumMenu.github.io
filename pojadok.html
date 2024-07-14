@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Појадок</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('Images/BgWEB.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: repeat;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        #Glaven {
+            width: 100vw;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #Container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        #Container > div {
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .Ime {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        h2, p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            #Container > div {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .Ime {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="Glaven">
+    <div id="Container">
+        <div>
+            <h1>Појадок</h1>
+        </div>
+        <div>
+            <div class="Ime">
+                <h2>Монте Кристо (250 гр.)</h2>
+                <p>(два сендвичи со леб бриош, мајонез, пилешка шунка, кашкавал, павлака, домат)</p>
+            </div>
+            <h2>180ден.</h2>
+        </div>
+        <div>
+            <div class="Ime">
+                <h2>Јајца на око (320 гр.) </h2>
+                <p>(3 јајца, парче сирење, домат, сланина / говеско суво, леб бриош)</p>
+            </div>
+            <h2>200ден.</h2>
+        </div>
+        <div>
+            <div class="Ime">
+                <h2>Омлет со пилешка шунка, печурки и кашкавал (320 гр.)</h2>
+                <p>(3 јајца, домат, леб бриош)</p>
+            </div>
+            <h2>180ден.</h2>
+        </div>
+        <div>
+            <div class="Ime">
+                <h2>Омлет со врат, сланина и кашкавал (320гр.)</h2>
+                <p>(3 јајца, домат, леб бриош)</p>
+            </div>
+            <h2>190ден.</h2>
+        </div>
+        <div>
+            <div class="Ime">
+                <h2>Омлет Попај (280 гр.)</h2>
+                <p>(3 јајца, спанаќ, сирење, домат, павлака, леб бриош)</p>
+            </div>
+            <h2>180ден.</h2>
+        </div>
+        <div>
+            <div class="Ime">
+                <h2>Клуб сендвич (280 гр.)</h2>
+                <p>(пилешка шунка, кашкавал, зеленчук, помфрит, сос, леб бриош, кечап, мајонез)</p>
+            </div>
+            <h2>170ден.</h2>
+        </div>
+        <div>
+            <div class="Ime">
+                <h2>Мекица (200 гр.)</h2>
+                <p>(домат, сирење)</p>
+            </div>
+            <h2>130ден.</h2>
+        </div>
+        <div>
+            <div class="Ime">
+                <h2>Туна сендвич (280 гр.)</h2>
+                <p>(лебче, туна, марула, кромид, маслинки, помфрит, сос, кечап, мајонез)</p>
+            </div>
+            <h2>180ден.</h2>
+        </div>
+        <div>
+            <div class="Ime">
+                <h2>Француски тост (320 гр.)</h2>
+                <p>(пржен леб бриош, нутела крем, шумско овошје)</p>
+            </div>
+            <h2>220ден.</h2>
+        </div>
+    </div>
+</div>
+</body>
+</html>

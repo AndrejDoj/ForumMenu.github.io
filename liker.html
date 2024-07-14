@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ликер</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('Images/BgWEB.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: repeat;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        #Glaven {
+            width: 100vw;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #Container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        #Container > div {
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .Ime {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        h2, p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            #Container > div {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .Ime {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="Glaven">
+    <div id="Container">
+        <div>
+            <h1>Ликер</h1>
+        </div>
+        <div>
+            <div class="Ime">
+                <h2>Jagermeister 0,4</h2>
+            </div>
+            <h2>120ден.</h2>
+        </div>
+        <div>
+            <div class="Ime">
+                <h2>Campari 0,4</h2>
+            </div>
+            <h2>90ден.</h2>
+        </div>
+        <div>
+            <div class="Ime">
+                <h2>Aperol 0,4</h2>
+            </div>
+            <h2>80ден.</h2>
+        </div>
+        <div>
+            <div class="Ime">
+                <h2>Пелинковац 0,4</h2>
+            </div>
+            <h2>60ден.</h2>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
